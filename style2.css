@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #baa1ed;
+}
+
+.container{
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+
+    border-radius: 25px;
+}
+
+.imatges-grid{
+    display: flex;
+    flex-flow: row-reverse;
+}
+.imatges-grid .servei-card{
+    margin: 10px;
+    padding: 25px;
+    box-shadow:0px 10px 5px grey;
+    border-radius: 25px;
+
+}
+.servei-card h3{
+    font-family: sans-serif;
+    color: #14003f;
+}
+
+.grid-container{
+    padding: 0px;
+    margin: 100px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    order: revert;
+}
+.grid-container .grid-item{
+    padding: 0;
+    margin: 10px;
+    background-color: mediumpurple;
+    height: 75px;
+    width: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zindex-playground{
+    margin:auto;
+    background-color: red;
+    width: 700px;
+    height: 350px;
+    display: flex;
+}
+
+.zindex-playground .capa{
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 200px;
+}
+.capa.capa-fons{
+    position: relative;
+
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    color:white;
+    background:green;
+}
+.capa.capa-mitjana{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    z-index: 2;
+    color:white;
+    background: yellow;
+}
+
+.capa.capa-superior{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    z-index: 2;
+    color:white;
+    background: blue;
+}
+.capa-negativa{
+
+    margin-right: 40px;
+}
