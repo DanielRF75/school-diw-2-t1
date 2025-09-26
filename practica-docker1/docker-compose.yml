@@ -2,3 +2,7 @@ name: "diw-ut1"
 services:
   node-diw:
     image: node:24
+    tty: true    #mantiene terminal
+    stdin_open: true    #mantiene linea de comandos
+    volumes:
+      - ./programa:/app
