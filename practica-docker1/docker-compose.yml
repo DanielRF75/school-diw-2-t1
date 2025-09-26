@@ -1,0 +1,4 @@
+name: "diw-ut1"
+services:
+  node-diw:
+    image: node:24
