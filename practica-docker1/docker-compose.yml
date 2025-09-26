@@ -4,5 +4,6 @@ services:
     image: node:24
     tty: true    #mantiene terminal
     stdin_open: true    #mantiene linea de comandos
+    working_dir: /appdiw
     volumes:
-      - ./programa:/app
+      - ./programa:/appdiw
